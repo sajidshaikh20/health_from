@@ -95,6 +95,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/genderTitle"
+        android:padding="4dp"
         android:textSize="20sp"
         android:textStyle="bold"
         android:background="#D70505"
@@ -104,6 +105,22 @@
         android:layout_marginTop="20dp"
         />
 
+
+    <TextView
+        android:id="@+id/Healthview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="#D70505"
+        android:text="@string/HealthTitle"
+        android:padding="4dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/GenderView"
+        app:layout_constraintTop_toBottomOf="@id/Male"
+
+        />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/SubmitButton"
@@ -130,13 +147,8 @@
         android:layout_marginBottom="70dp"
         />
 
-    <RadioGroup
-        android:id="@+id/RadioGroup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints" />
 
-        <RadioButton
+     <RadioButton
             android:id="@+id/Male"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -156,8 +168,42 @@
         app:layout_constraintStart_toEndOf="@id/Male"
         app:layout_constraintTop_toBottomOf="@id/GenderView"
         tools:ignore="MissingConstraints" />
-
     />
+    <RadioButton
+        android:id="@+id/fever"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fever"
+        app:layout_constraintStart_toStartOf="@+id/Healthview"
+        app:layout_constraintTop_toBottomOf="@+id/Healthview"
+        android:textSize="15sp"
+    />
+
+
+    <RadioButton
+
+        android:id="@+id/Maleria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="Malaria"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/Cold"
+        app:layout_constraintStart_toEndOf="@+id/fever"
+        app:layout_constraintTop_toBottomOf="@id/Healthview" />
+
+    <RadioButton
+        android:id="@id/Cold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cold cough"
+        app:layout_constraintStart_toEndOf="@+id/Maleria"
+        app:layout_constraintTop_toBottomOf="@id/Healthview"
+        android:textSize="15sp"
+        android:layout_marginLeft="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
 
 
 
