@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">health_from</string>
+    <string name="genderTitle">Gender</string>
+    <string name="Title">Health Forms</string>
+    <string name="HintName">Enter Name</string>
+    <string name="HintSurName">Enter Surname</string>
+    <string name="HintEmail">Enter Emails</string>
+    <string name="HintContact">Number</string>
+    <string name="HintDob">Date Of Birth</string>
+    <string name="ResetTitle">Reset</string>
+    <string name="SubmitTitle">Submit</string>
+</resources>
